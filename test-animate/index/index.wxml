@@ -1,0 +1,11 @@
+<video id="myVideo" src="http://media02.inke.com/mp4/MTUxNTMxNDExOTI5OCM1OTMjbXA0.mp4" autoplay="autoplay" loop="loop" controls="false">
+  <cover-view class="pause {{_num == 1?'':'is-like'}}" data-num="1" bindtap="isLike">
+    <cover-image class="icon-img" hidden='{{!isHidden}}' src="img/icon_like_nor_s_video.png" />
+    <cover-image class="icon-img" hidden='{{isHidden}}' src="img/icon_like_s_video.png" />
+  </cover-view>
+  <cover-view style="position:'absolute';width:400rpx;height:400rpx;">
+    <cover-image class="like-animation" animation="{{animationData}}" hidden="{{animationCont}}" src="img/123.png" animationstart='animationStart'> </cover-image>
+  </cover-view>
+  <!-- <cover-view class='girl' hidden="{{animationCont}}"></cover-view> -->
+</video>
+<!-- <cover-image class='girl'></cover-image> -->
