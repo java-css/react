@@ -1,18 +1,18 @@
 import React, { Component } from "react"
-
+import { observer } from "mobx-react"
 import QP from "../component/QueryPannel"
 import TP from "../component/TablePannel"
 import ee from "../store/1"
-
+@observer
 class P1 extends Component {
-  constructor(props) {
-    super(props)
-    this.state = { data: [] }
+  // constructor(props) {
+  //   super(props)
+  //   this.state = { data: [] }
 
-    ee.on("message", text => {
-      this.setState({ data: text })
-    })
-  }
+  //   ee.on("message", text => {
+  //     this.setState({ data: text })
+  //   })
+  // }
 
   // handleChange(e) {
   //   console.log(e)

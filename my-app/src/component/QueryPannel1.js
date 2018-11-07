@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-
+import {observable}from 'mobx'
 class QP1 extends Component {
   handleSubmit(event) {
     event.preventDefault()
